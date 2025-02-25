@@ -25,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'net.touchcapture.qr.flutterqr'
     compileSdk 33
 
     sourceSets {
@@ -32,7 +33,7 @@ android {
     }
     defaultConfig {
         // minSdkVersion is determined by Native View.
-        minSdkVersion 20
+        minSdkVersion flutter.minSdkVersion
         targetSdkVersion 33
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
